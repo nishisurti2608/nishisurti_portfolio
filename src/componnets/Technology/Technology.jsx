@@ -63,17 +63,17 @@ const Technology = () => {
 
   return (
     <div
-      name="skill"
-      className="bg-gradient-to-b from black via-slate-800 to bg-gray-800 w-full md:pt-20"
+      name="Technology"
+      className=" bg-gradient-to-b from black via-slate-800 to bg-gray-800 text-white p-4 h-screen"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full  h-full text-white">
-        <div className="py-8">
-          <h2 className="text-4xl sm:text-7xl font-bold text-center">Skills</h2>
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+        <div>
+          <h2 className="text-4xl sm:text-7xl font-bold py-4 text-center ">
+            Skills
+          </h2>
           <h1 className="text-gray-300 text-center">
-            Earned Knowledge <br />
-            <span className="text-gray-400 py-4">
-              I have pulled my hair many times but it was worth
-            </span>
+            I pulled my hair manytimes but that was worth <br />
+            <span className="text-gray-400 py-4"></span>
           </h1>
         </div>
 

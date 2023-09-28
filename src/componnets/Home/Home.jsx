@@ -20,7 +20,7 @@ const Home = () => {
             over a coffee.
           </p>
           <div className="group">
-            <button className=" text-gray-800 font-bold  w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-l from-slate-400 to-slate-500 cursor-pointer">
+            <button className=" text-gray-800 font-bold  w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-l from-slate-400 to-slate-500 cursor-pointer hover:scale-110 duration-300">
               My Skills
               <span className="group-hover hover:rotate-90 duration-300">
                 <BsArrowRightShort size={25} className="ml-1" />
