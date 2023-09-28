@@ -1,10 +1,8 @@
 import React from "react";
 import arrayDestruct from "../../assets/portfolio/arrayDestruct.jpg";
-import { Link } from "react-router-dom";
+
 import navbar from "../../assets/portfolio/navbar.jpg";
 import reactParallax from "../../assets/portfolio/reactParallax.jpg";
-
-import { SiAzuredataexplorer } from "react-icons/si";
 
 const Portfolio = () => {
   const portfolios = [
@@ -29,11 +27,32 @@ const Portfolio = () => {
       des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       languages: ["React", "NodeJS", "MongoDB"],
     },
+    {
+      id: 4,
+      src: navbar,
+      pname: "SiHellofresh",
+      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      languages: ["React", "NodeJS", "MongoDB"],
+    },
+    {
+      id: 5,
+      src: navbar,
+      pname: "SiHellofresh",
+      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      languages: ["React", "NodeJS", "MongoDB"],
+    },
+    {
+      id: 6,
+      src: navbar,
+      pname: "SiHellofresh",
+      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      languages: ["React", "NodeJS", "MongoDB"],
+    },
   ];
 
   return (
     <div
-      name="portfolio"
+      name="Portfolio"
       className="bg-gradient-to-b from black via-slate-800 to bg-gray-800  w-full text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -79,14 +98,6 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
-        </div>
-        <div className="flex flex-col items-center">
-          <button className="group text-gray-800 bg-gradient-to-l from-slate-400 to-slate-500 px-6 font-bold py-4 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-            Explore More
-            <span className="group-hover duration-300">
-              <SiAzuredataexplorer size={20} className=" animate-bounce ml-2" />
-            </span>
-          </button>
         </div>
       </div>
     </div>

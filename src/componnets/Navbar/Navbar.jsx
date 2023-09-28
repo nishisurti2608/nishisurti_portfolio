@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/logo_light.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     },
     {
       id: 4,
-      link: "Experience",
+      link: "Skill",
     },
     {
       id: 5,
@@ -32,7 +33,11 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-6 text-white bg-gray-800 fixed shadow-md shadow-gray-900">
       <div>
-        <img src={logo} className="App-logo w-full h-20 w-22" alt="logo" />
+        <img
+          src={logo}
+          className="App-logo w-full h-20 w-22 sm:h-15 w-15"
+          alt="logo"
+        />
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
@@ -40,7 +45,9 @@ const Navbar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -58,7 +65,14 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize  text-gray-400 hover:scale-105 duration-200 py-6"
             >
-              {link}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

@@ -4,7 +4,7 @@ import HeroImage from "../../assets/nishiprofile.jpeg";
 const Home = () => {
   return (
     <div
-      name="home"
+      name="Home"
       className="h-screen w-full bg-gradient-to-b from black via-slate-800 to bg-gray-800 text-white"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pt-20">
