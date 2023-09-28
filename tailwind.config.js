@@ -6,6 +6,9 @@ module.exports = {
     fontFamily: {
       signature: ["Fuggles"],
     },
+    variants: {
+      textColor: ["group-hover"],
+    },
   },
   plugins: [],
 };

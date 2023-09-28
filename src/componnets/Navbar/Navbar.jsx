@@ -30,9 +30,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-6 text-white bg-gray-800 fixed">
+    <div className="flex justify-between items-center w-full h-20 px-6 text-white bg-gray-800 fixed shadow-md shadow-gray-900">
       <div>
-        <img src={logo} className="App-logo h-20 w-22 " alt="logo" />
+        <img src={logo} className="App-logo w-full h-20" alt="logo" />
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
