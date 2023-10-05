@@ -33,19 +33,19 @@ const Technology = () => {
       id: 4,
       src: reactImage,
       title: "React",
-      style: "shadow-blue-600",
+      style: "shadow-[#29b6f6]",
     },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind",
-      style: "shadow-sky-400",
+      style: "shadow-cyan-700",
     },
     {
       id: 6,
       src: nextjs,
       title: "Next JS",
-      style: "shadow-white",
+      style: "shadow-gray-700",
     },
     {
       id: 7,
@@ -57,27 +57,24 @@ const Technology = () => {
       id: 8,
       src: github,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: "dark:shadow-gary-800 shadow-black",
     },
   ];
 
   return (
-    <div
-      name="Skill"
-      className=" bg-gradient-to-b from black via-slate-800 to bg-gray-800 text-white p-4 h-screen"
-    >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+    <div name="Skill" className=" dark:bg-gray-800 bg-white  p-4 h-full">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full dark:text-white text-gray-800">
         <div>
           <h2 className="text-4xl sm:text-7xl font-bold py-4 text-center ">
             Skills
           </h2>
-          <h1 className="text-gray-300 text-center">
+          <h1 className="dark:text-gray-300 text-center text-gray-600">
             I pulled my hair manytimes but that was worth <br />
             <span className="text-gray-400 py-4"></span>
           </h1>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 cursor-pointer">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
