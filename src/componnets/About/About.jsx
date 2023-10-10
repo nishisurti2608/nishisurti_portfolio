@@ -7,7 +7,7 @@ const About = () => {
       className="w-full h-full dark:bg-gray-800 bg-white dark:text-white text-gray-800"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full  text-center ">
-        <h2 className="text-4xl sm:text-7xl font-bold py-2">About Me</h2>
+        <h2 className="text-4xl sm:text-7xl font-bold py-4">About Me</h2>
         <h1 className="dark:text-gray-300 text-gray-600 ">
           Proffesional Hint <br />
           <span className="dark:text-gray-400 text-gray-700 py-4">
@@ -15,7 +15,7 @@ const About = () => {
             please say Cheese 📸
           </span>
         </h1>
-        <span className="dark:text-gray-400  text-gray-700  py-24">
+        <span className="dark:text-gray-400  text-gray-700  py-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste
           pariatur exercitationem cumque autem nemo quae vitae voluptas hic
           libero, animi molestiae et reprehenderit a totam, quos corrupti. Nobis

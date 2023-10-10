@@ -34,7 +34,13 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-6 text-white dark:bg-gray-800 bg-white fixed shadow-md dark:shadow-gray-900 shadow-gray-100">
       <div>
-        <img src={logo} className="App-logo w-full h-20" alt="logo" />
+        <a href="/">
+          <img
+            src={logo}
+            className="App-logo w-full h-20 cursor-pointer"
+            alt="logo"
+          />
+        </a>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (

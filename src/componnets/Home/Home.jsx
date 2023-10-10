@@ -1,5 +1,7 @@
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
+
+import { Link } from "react-scroll";
 import HeroImage from "../../assets/nishiprofile.jpeg";
 const Home = () => {
   return (
@@ -20,18 +22,24 @@ const Home = () => {
             over a coffee.
           </p>
           <div className="group">
-            <button
-              className=" dark:text-gray-800 
+            <button>
+              <Link
+                to="Portfolio"
+                smooth
+                duration={500}
+                className=" dark:text-gray-800 
              font-bold  w-fit px-6 py-3 my-2 flex items-center rounded-md dark:bg-gradient-to-l from-slate-400 to-slate-500 
             border-2
              border-gray-800
 
              cursor-pointer hover:scale-110 duration-300"
-            >
-              My Skills
-              <span className="group-hover hover:rotate-90 duration-300">
-                <BsArrowRightShort size={25} className="ml-1" />
-              </span>
+              >
+                My Work
+                <span className="group-hover:rotate-90 duration-300">
+                  <BsArrowRightShort size={25} className="ml-1" />
+                </span>
+              </Link>
+              <span className="group-hover hover:rotate-90 duration-300"></span>
             </button>
           </div>
         </div>

@@ -66,16 +66,16 @@ const Portfolio = () => {
           </h1>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-8 px-12 md:m-12 sm:px-0">
           {portfolios.map(({ id, src, pname, des, languages }) => (
             <div
               key={id}
-              className="shadow-md dark:shadow-gray-600  shadow-gray-800 rounded-lg"
+              className="shadow-md dark:shadow-gray-600 hover:scale-105 cursor-pointer shadow-gray-800 rounded-lg"
             >
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105 cursor-pointer"
+                className="rounded-md duration-200  cursor-pointer"
               />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 dark:text-white text-gray-800">
